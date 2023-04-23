@@ -1,24 +1,57 @@
 body {
-    background-color: rgb(34, 152, 140);
+  background-color: rgb(34, 152, 140);
 }
+
 button {
-    font: 1em Comic Neue;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    border: 50px auto black;
-    padding: 5px;
+  font: 1em Comic Neue;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+
+  /* For Safari and Firefox */
+  border: 50px auto black;
 }
-button:hover{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border: 50px auto white;
-    padding: 5px;
+
+/* For Chrome and Edge */
+@supports (-webkit-appearance:none) {
+  button {
+    outline: 50px auto black;
+    border: none;
+  }
 }
+
+button:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+
+  /* For Safari and Firefox */
+  border: 50px auto white;
+}
+
+/* For Chrome and Edge */
+@supports (-webkit-appearance:none) {
+  button:hover {
+    outline: 50px auto white;
+    border: none;
+  }
+}
+
 p {
-    color: rgb(0, 0, 0);
-    background-color: white;
-    border: 50px auto black;
-    padding: 15px;
-    width: fit-content;
-    height: fit-content;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  padding: 15px;
+  width: fit-content;
+  height: fit-content;
+
+  /* For Safari and Firefox */
+  border: 50px auto black;
+}
+
+/* For Chrome and Edge */
+@supports (-webkit-appearance:none) {
+  p {
+    outline: 50px auto black;
+    border: none;
+  }
 }
