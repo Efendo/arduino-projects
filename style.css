@@ -13,7 +13,7 @@ button {
 }
 
 /* For Chrome and Edge */
-@supports (-webkit-appearance:none) {
+@supports not (-webkit-appearance:none) {
   button {
     outline: 50px auto black;
     border: none;
@@ -30,7 +30,7 @@ button:hover {
 }
 
 /* For Chrome and Edge */
-@supports (-webkit-appearance:none) {
+@supports not (-webkit-appearance:none) {
   button:hover {
     outline: 50px auto white;
     border: none;
@@ -49,7 +49,7 @@ p {
 }
 
 /* For Chrome and Edge */
-@supports (-webkit-appearance:none) {
+@supports not (-webkit-appearance:none) {
   p {
     outline: 50px auto black;
     border: none;
